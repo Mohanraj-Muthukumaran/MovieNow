@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Movie Now, Online ticket booking made easier">
+    <link rel="icon" href="./assets/images/movienow.webp">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Movie Now - Book your tickets online now</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="./assets/images/movienow.webp" alt="Logo of Movie Now">
+        </h1>
+
+        <nav aria-label="navigation">
+            <ul type="none">
+                <li>
+                    <a id="selected" href="."> HOME </a>
+                </li>
+                <li>
+                    <a href="."> THEATRES </a>
+                </li>
+                <li>
+                    <a href="."> EVENTS </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <header>
+            <h2>MOVIES</h2>
+
+            <section class="tab" role="tab">
+                <ul class="tablist" role="tablist" type="none">
+                    <li role="nowshowingtab" tabindex="0">
+                        <button class="tablink" id="active" onclick="switchTab(this, 0)">NOW SHOWING</button>
+                    </li>
+                    <li role="comingsoontab" tabindex="1">
+                        <button class="tablink" onclick="switchTab(this, 1)">COMING SOON</button>
+                    </li>
+                </ul>
+            </section>
+
+            <select name="language" id="language" aria-label="language">
+                <optgroup label="Languages">
+                    <option value="All"> All </option>
+                    <option value="Tamil"> Tamil </option>
+                    <option value="English"> English </option>
+                    <option value="Hindi"> Hindi </option>
+                    <option value="Others"> Others </option>
+                </optgroup>
+            </select>
+        </header>
+        
+        <section class="main-flex-container">
+            <aside>
+                <figure>
+                    <span class="type">2D</span>
+                    <img src="./assets/images/movies/rrr.webp" alt="RRR logo starring Jr. NTR, Ram charan, Alia Bhat in the background">
+                    <figcaption>
+                        <h3>RRR</h3>
+                        <p>Tamil | UA</p>
+                        <button aria-roledescription="book now">BOOK NOW</button>
+                        <p> <strong> Historical Action Drama</strong> | <strong> 3 hrs 07 mins </strong> </p>
+                        <p> <strong> Actors: </strong> Jr. NTR | Alia Bhatt | Daisy | EdgarJones | Nithya Menen | Ram Charan | Teja </p>
+                        <p> <strong> Director: </strong> SS Rajamouli </p>
+                        <p> <strong> Music: </strong> M. M. Keearavani </p>
+                        <p>
+                            <strong> Synopsis: </strong> <br>
+                            &nbsp;RRR is an upcoming PAN Indian (period action drama) releasing in Telugu, Hindi, Tamil, Malayalam, Kannada and few other languages. It is a fictional story about India's freedom fighters, Alluri Sitaramaraju and Komaram Bheem who fought against the British Raj and Nizam of Hyderabad respectively. Stars NTR, Ram Charan, Ajay Devgn, Alia Bhatt, Olivia Morris and Shriya in lead roles. Ray Stevenson, Alison Doody, Samuthirakani, Spandana Chaturvedi, Chatrapathi Sekhar others in supporting roles.
+                        </p>
+                    </figcaption>
+                </figure>
+            </aside>
+
+            <section id="nowshowing" class="tabcontent"> 
+                <ul type="none">
+                    <li>
+                        <figure>
+                            <span class="type">2D</span>
+                            <img src="./assets/images/movies/rrr.webp" alt="RRR logo starring Jr. NTR, Ram charan, Alia Bhat in the background">
+                            <figcaption>
+                                <h3>RRR</h3>
+                                <p>Tamil | UA</p>
+                                <button aria-roledescription="book now">Book</button>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure>
+                            <span class="type">2D</span>
+                            <img src="./assets/images/movies/kashmirfiles.webp" alt="Kashmir files logo starring the movie crew in the background">
+                            <figcaption>
+                                <h3>The Kashmir Files: Genocide</h3>
+                                <p>Hindi | A</p>
+                                <button aria-roledescription="book now">Book</button>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure>
+                            <span class="type">2D</span>
+                            <img src="./assets/images/movies/jersey.webp" alt="Jersey logo starring shahid kapoor with a stadium in the background">
+                            <figcaption>
+                                <h3>Jersey</h3>
+                                <p>Hindi | A</p>
+                                <button aria-roledescription="book now">Book</button>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure>
+                            <span class="type">2D</span>
+                            <img src="./assets/images/movies/selfie.webp" alt="Selfie logo starring G V Prakashkumar, Gautham Vasudev Menon in the background">
+                            <figcaption>
+                                <h3>Selfie</h3>
+                                <p>Tamil | UA</p>
+                                <button aria-roledescription="book now">Book</button>                   
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="comingsoon" class="tabcontent">
+                <ul type="none">
+                    <li>
+                        <figure>
+                            <span class="type">2D</span>
+                            <img src="./assets/images/movies/kgf2.webp" alt="KGF 2 logo starring yash in a stylish look in the background">
+                            <figcaption>
+                                <h3>KGF 2</h3>
+                                <p>Tamil | UA</p>
+                                <button aria-roledescription="book now">Book</button>
+                            </figcaption>
+                        </figure>        
+                    </li>
+
+                    <li>
+                        <figure>
+                            <span class="type">2D</span>
+                            <img src="./assets/images/movies/kingrichard.webp" alt="King Richard logo starring Will Smith with two kids in the background">
+                            <figcaption>
+                                <h3>King Richard</h3>
+                                <p>English | UA</p>
+                                <button aria-roledescription="book now">Book</button>    
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>                    
+        </section>
+    </main>
+
+    <footer>
+        Copyright &copy; 2022 - 2023 Movie Now Pvt. Ltd. All rights reserved.  
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

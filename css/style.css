@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+body > header{
+    display: flex;
+    width: 100%;
+    padding: 0.3rem 0.5rem 0.1rem 0.5rem;
+    background-color: #2c333d;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+body > header h1 img{
+    width: 6.25rem;
+    height: 3.12rem;
+}
+
+body > header nav ul li{
+    display: inline-block;
+    padding: 0.6rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #A7A7A7;
+}
+
+header nav ul li a:hover{ 
+    color: #ffc107;
+}
+
+header nav ul li #selected{ 
+    color: #ffc107;
+    padding-bottom: 0.6rem;
+    border-bottom: 0.2rem solid #ffc107;
+}
+
+main > header {
+    display: flex;
+    margin: 0.6rem 0;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > header h2 {
+    letter-spacing: 0.25rem;
+    font-weight: normal;
+    padding-bottom: 0.6rem;
+    border-bottom: 0.2rem solid #ffc107;
+}
+
+.tab {
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.tab .tablist {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 0.1rem;
+}
+
+.tab .tablist li{
+    display: inline-block;
+} 
+
+.tab .tablist li button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #A7A7A7;
+    padding: 1rem 1.5rem;
+    border-radius: 0.1rem;
+    transition: 0.3s;
+}
+
+.tab .tablist li #active{
+    background-color: #ffffff;
+    border: 1px solid #a7a7a7;
+}
+
+main > header select{
+    width: 30%;
+    height: 2rem;
+    padding: 0.2rem;
+    outline: none;
+    border: 1px solid #a7a7a7;
+    border-radius: 0.2rem;
+    text-align: center;
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance:none !important;
+    -webkit-appearance: none !important; 
+    appearance: none !important;
+}
+
+.main-flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+/* adjust flex % on break points*/
+.main-flex-container aside{
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 0.rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 1rem; 
+    height: 100%;
+    flex: 30%;
+    float: right;
+}
+
+.main-flex-container aside figure{
+    position: relative;
+    text-align: center;
+}
+
+.main-flex-container aside figure .type{
+    position: absolute;
+    top: 0;
+    padding: 0.6rem 0.8rem;
+    background-color: #4589ff;
+    color: #ffffff;
+}
+
+.main-flex-container aside figure img{
+    width: 12rem;
+    height: 16rem;
+}
+
+.main-flex-container aside figure figcaption h3{
+    padding: 0.4rem 0.5rem;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.main-flex-container aside figure figcaption p{
+    padding: 0.1rem 0.5rem;
+    color: #757575;
+}
+
+.main-flex-container aside figure figcaption button{
+    width: 100%;
+    height: 3rem;
+    margin: 0.9rem 0;
+    outline: none;
+    border: none;
+    background-color: #ffc107;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.main-flex-container aside figure figcaption strong{
+    color: #2c333d;
+}
+
+/* adjust flex % on break points*/
+.main-flex-container .tabcontent{
+    flex: 70%;
+}
+
+.main-flex-container .tabcontent ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-flex-container .tabcontent ul li{
+    margin: 1rem;
+    border: 1px solid #e3d9d9;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.main-flex-container .tabcontent ul li:hover{
+    transform: scale(1.02);
+}
+
+.main-flex-container .tabcontent ul li figure{
+    position: relative;
+}
+
+.main-flex-container .tabcontent ul li figure .type{
+    position: absolute;
+    top: 0;
+    padding: 0.6rem 0.8rem;
+    background-color: #4589ff;
+    color: #ffffff;
+}
+
+.main-flex-container .tabcontent ul li figure img{
+    width: 15rem;
+    height: 20rem;
+}
+
+.main-flex-container .tabcontent ul li figure figcaption{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-flex-container .tabcontent ul li figure figcaption h3{
+    text-overflow: ellipsis;
+    width: 12rem;
+    padding: 0.4rem 0.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.main-flex-container .tabcontent ul li figure figcaption p{
+    text-overflow: ellipsis;
+    width: 12rem;
+    padding: 0.1rem 0.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #757575;
+}
+
+.main-flex-container .tabcontent ul li figure figcaption button{
+    width: 100%;
+    height: 3rem;
+    margin-top: 0.9rem;
+    outline: none;
+    border: none;
+    background-color: #ffc107;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .main-flex-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    /* default iPad screens */
+    .main-flex-container aside{
+        flex: 40%;
+    }
+
+    .main-flex-container .tabcontent{
+        flex: 60%;
+    }
+}
+
+body > footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    padding: 0.5rem;
+    background-color: #2f2f34;
+    color: #757575;
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
